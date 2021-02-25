@@ -5,12 +5,13 @@
 		<title>Yoga - contatos</title>
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="contato.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
-	
+
 	<header>
-			<div class="caixa">			
-				<h1><img class="logo" src="img/logoPosicoes.png"></h1>				
+			<fieldset class="caixa">
+				<h1><img class="logo" alt = "logo da yoga" src="img/logoPosicoes.png"></h1>
 				<nav>
 					<ul>
 						<li><a href="asanas.html">Àsanas</a></li>
@@ -19,56 +20,99 @@
 						<li><a href="contato.html">Contato</a></li>
 					</ul>
 				</nav>
-			</div>
+			</fieldset>
 		</header>
-		
+
 		<main>
+		
+		   <img src="img/img_float.jpg" class="imgFloat" alt="imagem yoga">
+		
 			<form>
 				<label for="nomesobrenome">Nome e Sobrenome</label>
-				<input class="input-padrao" type="text" id="nomesobrenome">
-				
+				<input class="input-padrao" type="text" id="nomesobrenome" required>
+
 				<label for="email">Email</label>
-				<input class="input-padrao" type="text" id="email">
-				
+				<input class="input-padrao" type="email" id="email" placeholder="email@dominio.com" required>
+
 				<label for="telefone">Telefone</label>
-				<input class="input-padrao" type="text" id="telefone">
-				
+				<input class="input-padrao" type="number" id="telefone" placeholder="(xx) xxxx.xxxx" required>
+
 				<label for="mensagem">Mensagem</label>
-				<textarea class="input-padrao" id="mensagem" cols="70" rows="10"></textarea>
-				
-				
-				<div>
-					<p> Como prefere o nosso contato ? </p>
+				<textarea class="input-padrao" id="mensagem" cols="70" rows="10" required></textarea>
+
+
+				<fieldset>
+					<legend> Como prefere o nosso contato ? </legend>
 					<label for="radio-email">
 					   <input name="contato" id="radio-email" type="radio" value="email"> Email
 					</label>
-										
+
 					<label for="radio-telefone">
 					  <input name="contato" id="radio-telefone" type="radio" value="telefone">Telefone
-					</label>					
-					
-					<label for="radio-whatsapp">
-					  <input name="contato" id="radio-whatsapp" type="radio" value="whatsapp">Whatsapp
 					</label>
-					
+
+					<label for="radio-whatsapp">
+					  <input name="contato" id="radio-whatsapp" type="radio" value="whatsapp" checked>Whatsapp
+					</label>
+
 					<label for="radio-carta">
 					  <input name="contato" id="radio-carta" type="radio" value="carta">Carta
 					</label>
-					
+
+				</fieldset>
+
+				<div>
+					<p> Qual horário prefere ser atendido ?</p>
+					<select>
+						<option> manhã </option>
+						<option> tarde </option>
+						<option> noite </option>
+					</select>
 				</div>
-				
-				<label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
-				
-				<input type="submit" value="Enviar Formulário">				
-				
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar Formulário" class="enviar">
+
 			</form>
+
+			<table>
+				<thead>
+				<tr>
+					<th>Dia</th>
+					<th>Horario</th>
+				</tr>
+			</thead>
+			<tbody>
+			   <tr>
+				   <td>Segunda</td>
+				   <td>8h ~ 20h</td>
+			   </tr>
+			   <tr>
+				<td>Quarta</td>
+				<td>8h ~ 20h</td>
+			</tr>
+			<tr>
+				<td>Sexta</td>
+				<td>8h ~ 20h</td>
+			</tr>	
+			</tbody>
+			</table>
+		
+		    <section class="mapa">
+			   <h3 class="tituloPrincipal"> Nosso Estabelecimento </h3>
+			   <p> Nosso estabelecimento está localizado no coração da cidade </p>
+			   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.881636582411!2d-46.56073474983313!3d-23.680190484548497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce43ac15c8667d%3A0xa2ee7c2dd893661!2sParque%20Raphael%20Lazzuri!5e0!3m2!1spt-BR!2sbr!4v1612911488845!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</section>
+			
+					
 		</main>
-		
+
 		<footer>
-			<img src="img/yogafooter.png"> 		
+			<img alt ="posições de yoga no rodapé" src="img/yogafooter.png">
 		</footer>
-		
+
 		</body>
-		
-		
-</html>		
+
+
+</html>

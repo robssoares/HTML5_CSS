@@ -1,3 +1,7 @@
+body{
+	font-family: 'Montaga', serif;
+}
+
 header {
 	background: #BBBBBB;
 	padding: 20px 0;
@@ -48,7 +52,7 @@ nav a:hover {
   margin: 40px 0;
   }
   
-  form label, form p {
+  form label, form legend {
 	display: block;
 	font-size: 20px;
 	margin-bottom: 10px;
@@ -70,5 +74,66 @@ nav a:hover {
 	
    }
    
+   .enviar {
+   	width: 40%;
+   	padding: 15px 0px;
+   	background: purple;
+   	color: white;
+   	font-weight: bold;
+   	font-size: 18px;
+   	border: none;
+   	border-radius: 5px;
+   	transition: 1s all;
+   	cursor: pointer;
+   	
    
+   }
+   
+   .enviar:hover {
+   	background: violet;
+   	transform: scale(1.2);
+   }
+   
+  table{
+	  margin: 20px 0 40px;
+  } 
+  
+  thead{
+	  background: #555555;
+	  color: white;
+	  font-weight: bold;
+  }
+
+  td,th{
+	  border:1px solid #000000;
+	  padding: 8px 15px; /*vertical  - horizontal */
+  }
+  
+  .imgFloat {
+     width: 30%;
+	 height: 30%; 
+	 float: left;
+	 margin: 0 20px 20px 0;
+	 box-shadow: 10px 10px 30px #000000;
+  }
+  
+  .mapa {
+
+     padding: 3em 0;
+  }
+  
+  h3 {
+    font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin: 5px;
+	text-shadow: 0 0 10px purple;
+  }
+  
+  
+  .mapa p {
+     margin: 0 0 2em;
+	 text-align: center;
+  }
+  
   
